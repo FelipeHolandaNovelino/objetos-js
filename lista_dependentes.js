@@ -17,7 +17,7 @@ cliente.dependentes.push({    //adicionando um novo elemento ao objeto/array dep
     dataNasci : "05/11/2001"
 })
 
-const irmaoMaisNovo = cliente.dependentes.filter(dependentes => dependentes.dataNasci === "05/12/2007")  //aqui usamos a funcao filter para retornar qual array esta o irmao mais novo
+const irmaoMaisNovo = cliente.dependentes.filter(dependente => dependente.dataNasci === "05/12/2007")  //aqui usamos a funcao filter para retornar qual array esta o irmao mais novo
 
 console.log(irmaoMaisNovo[0].nome)  //aqui declaramos qual elemento queremos do irmao mais novo,no caso nome
 
