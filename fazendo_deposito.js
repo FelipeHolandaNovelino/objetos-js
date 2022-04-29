@@ -19,5 +19,5 @@ const cliente = {
 }
 
 console.log(cliente.saldo)
-cliente.depositar(30),
+cliente.depositar(30)
 console.log(cliente.saldo)

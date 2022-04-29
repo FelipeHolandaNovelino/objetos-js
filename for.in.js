@@ -17,14 +17,15 @@ const cliente = {
         this.saldo += valor
     }
 }
-let relatorio = " " ;
+let relatorio = " " ;// variavel onde ficara o meu resultado
 
-for(let info in cliente){
-    if(typeof cliente[info] === "object" || typeof cliente[info] === "function") {
+for(let info in cliente){  //for in -pra cada propriedade de um objeto -info é cada key
+    if(typeof cliente[info] === "object" || typeof cliente[info] === "function") {  //typeof diz o tipo do dado ,typeof cliente[info] = qual o tipo do dado de cliente[info]
         continue
     } else{
     relatorio +=`
-    ${info} ==> ${cliente[info]}`
+    ${info} ==> ${cliente[info]} 
+     `  //exemplo  relatorio += `nome ==> cliente.nome`
 }
 }
-console.log(relatorio)
+console.table(relatorio)  //console.table exibe no console o objeto como uma planilha
